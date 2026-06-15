@@ -62,17 +62,19 @@ The dataset contains **1,303 laptop entries** with **12 features**:
 
 ## 🧪 ML Models Evaluated
 
-The following regression models were trained and compared:
+The following regression models were trained, evaluated, and compared using **R² Score** and **MAE (Mean Absolute Error)**:
 
-| Model | Description |
-|---|---|
-| **Linear Regression** | Baseline model |
-| **Ridge Regression** | L2 regularization |
-| **Lasso Regression** | L1 regularization |
-| **K-Nearest Neighbors (KNN)** | Instance-based learning |
-| **Decision Tree** | Tree-based regression |
-| **SVM** | Support Vector Machine |
-| **Random Forest** | 🏆 Ensemble method (best performer) |
+| # | Model | R² Score | MAE | Remarks |
+|---|---|---|---|---|
+| 1 | **Random Forest** 🏆 | **0.8845** | **0.1637** | ✅ Best performer — used in deployment |
+| 2 | Ridge Regression | 0.8536 | 0.1871 | L2 regularization (α=10) |
+| 3 | Linear Regression | 0.8499 | 0.1875 | Baseline model |
+| 4 | Lasso Regression | 0.8489 | 0.1890 | L1 regularization (α=0.001) |
+| 5 | Decision Tree | 0.7954 | 0.2157 | max_depth=8 |
+| 6 | KNN | 0.6609 | 0.2843 | k=3 neighbors |
+| 7 | SVM (RBF) | 0.0562 | 0.2489 | Poor fit on this dataset |
+
+> **Random Forest Regressor** achieved the highest R² score of **0.8845** with the lowest MAE of **0.1637**, making it the best model for this task. It was selected as the final model for deployment in the Streamlit app.
 
 ---
 
