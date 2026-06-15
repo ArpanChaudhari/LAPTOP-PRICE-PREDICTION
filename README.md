@@ -6,6 +6,8 @@
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Click_Here-6C63FF?style=for-the-badge)](https://laptop-price-prediction-ruxs4civj8putpnclgafqu.streamlit.app/)
+
 A **Machine Learning web application** that predicts laptop prices based on hardware specifications and brand information. Built with **Streamlit** for an interactive UI and powered by a trained ML pipeline using **scikit-learn**.
 
 ---
